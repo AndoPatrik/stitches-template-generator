@@ -1,8 +1,15 @@
 /* R4M Custom Styles */
+
+/* Custom pre-view settings */
 div.js-snippets > figure{
     padding-right: 0.5rem;
     margin-bottom: 0.5rem;
 }
 div.js-snippets > figure > img{
     border-radius: 0.25rem;
+}
+
+/* Custom hover view settings */
+.js-droppable > .js-snippet:hover > .js-delete-btn{
+    display: block !important;
 }
