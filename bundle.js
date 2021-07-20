@@ -273,8 +273,8 @@ const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
 const deleteBtnHtml =
-  "<div class='bg-white hidden absolute top-0 left-0 js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt pointer-events-none'></i></div>";
-const stitchesCSSPath = "https://stitches.hyperyolo.com/output.css";
+  "<div class='bg-white hidden absolute top-0 left-0 js-delete-btn px-4 py-2 kolbas shadow rounded hover:bg-yellow-100 cursor-pointer'><span class='far fa-trash-alt pointer-events-none'></span></div>";
+const stitchesCSSPath = "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css";
 const fontAwesomePath =
   "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 const fontAwesomeIntegrity =
@@ -1769,9 +1769,9 @@ module.exports = function(data, filename, mime, bom) {
     var blobData = (typeof bom !== 'undefined') ? [bom, data] : [data]
     var blob = new Blob(blobData, {type: mime || 'application/octet-stream'});
     if (typeof window.navigator.msSaveBlob !== 'undefined') {
-        // IE workaround for "HTML7007: One or more blob URLs were 
-        // revoked by closing the blob for which they were created. 
-        // These URLs will no longer resolve as the data backing 
+        // IE workaround for "HTML7007: One or more blob URLs were
+        // revoked by closing the blob for which they were created.
+        // These URLs will no longer resolve as the data backing
         // the URL has been freed."
         window.navigator.msSaveBlob(blob, filename);
     }
@@ -1780,16 +1780,16 @@ module.exports = function(data, filename, mime, bom) {
         var tempLink = document.createElement('a');
         tempLink.style.display = 'none';
         tempLink.href = blobURL;
-        tempLink.setAttribute('download', filename); 
-        
+        tempLink.setAttribute('download', filename);
+
         // Safari thinks _blank anchor are pop ups. We only want to set _blank
         // target if the browser does not support the HTML5 download attribute.
-        // This allows you to download files in desktop safari if pop up blocking 
+        // This allows you to download files in desktop safari if pop up blocking
         // is enabled.
         if (typeof tempLink.download === 'undefined') {
             tempLink.setAttribute('target', '_blank');
         }
-        
+
         document.body.appendChild(tempLink);
         tempLink.click();
         document.body.removeChild(tempLink);

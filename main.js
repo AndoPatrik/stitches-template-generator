@@ -7,8 +7,8 @@ const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
 const deleteBtnHtml =
-  "<div class='bg-white hidden absolute top-0 left-0 js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt pointer-events-none'></i></div>";
-const stitchesCSSPath = "https://stitches.hyperyolo.com/output.css";
+  "<div class='bg-white hidden absolute top-0 left-0 js-delete-btn px-4 py-2 shadow rounded hover:bg-yellow-100 cursor-pointer'><span class='far fa-trash-alt pointer-events-none'></span></div>";
+const stitchesCSSPath = "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css";
 const fontAwesomePath =
   "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 const fontAwesomeIntegrity =
