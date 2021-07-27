@@ -12,4 +12,11 @@ div.js-snippets > figure > img{
 /* Custom hover view settings */
 .js-droppable > .js-snippet:hover > .js-delete-btn{
     display: block !important;
+    z-index: 100;
+}
+.js-snippets{
+    height: calc(100vh - 176px) !important;
+}
+.js-droppable{
+    height: calc(100vh - 105px) !important;
 }
