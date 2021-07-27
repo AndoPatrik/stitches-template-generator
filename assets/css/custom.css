@@ -20,3 +20,29 @@ div.js-snippets > figure > img{
 .js-droppable{
     height: calc(100vh - 105px) !important;
 }
+
+/* Custom TailWindCss settings */
+.h-fit-content{
+    width: fit-content;
+}
+.cursor-grab{
+    cursor: grab;
+}
+
+/* Custom outline settings */
+a:focus,
+p:focus,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+button:focus,
+select:focus,
+textarea:focus,
+input:focus {
+    outline-width: 2px;
+    outline-style: dashed !important;
+    outline-color: #f19e0b !important;
+}
