@@ -15,7 +15,7 @@ div.js-snippets > figure > img{
     z-index: 100;
 }
 .js-snippets{
-    height: calc(100vh - 176px) !important;
+    height: calc(100vh - 187px) !important;
 }
 .js-droppable{
     height: calc(100vh - 105px) !important;
